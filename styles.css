@@ -11,6 +11,22 @@ main {
   height: 50vh;
 }
 
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50px;
+  display: none;
+  z-index: 100;
+  background-color: rgba(43, 48, 53, 0.5);
+}
+
+#btn-back-to-top img{
+  max-height: 25px;
+  max-width: 16px;
+  padding-bottom: 3px;
+}
+
 .popup-btn {
   cursor: pointer;
 }
@@ -213,6 +229,12 @@ main {
 
   .animated-text {
     visibility: visible;
+  }
+
+  #btn-back-to-top {
+    bottom: 14px;
+    right: 14px;
+    background-color: rgba(43, 48, 53, 0.5);
   }
 
   .page-landing {
