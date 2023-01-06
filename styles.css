@@ -121,7 +121,7 @@ main {
 }
 
 #projects, #other-stuff {
-  background-color: #343a40;
+  background-color: #343a40 !important;
 }
 
 .card-imagetty-image img {
