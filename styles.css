@@ -206,8 +206,12 @@ main {
 
 .container-gif-section {
   display: flex !important;
-  justify-content: left !important;
+  justify-content: center;
   flex-wrap: wrap !important;
+  border: #adb5bd67 solid 1px;
+  border-radius: 0.2rem;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.019);
+  background-color: #21252973;
 }
 
 .container-gif-section img {
@@ -229,20 +233,23 @@ main {
 }
 
 .graphics-logo {
-  max-height: 100px;
-  max-width: 300px;
+  max-height: 120px;
+  max-width: 320px;
 }
 
 .graphics-section-container {
   display: flex;
-  margin-bottom: 14px !important;
+  border: #adb5bd67 solid 1px;
+  border-radius: 0.2rem;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.019);
+  background-color: #21252973;
 }
 
 .image-section {
-  background-color: #212529;
+  background-color:#343a40;
   margin-right: 40px;
   min-width: 300px;
-  width: 60vw;
+  width: 80vw;
   height: fit-content;
 }
 
@@ -258,7 +265,6 @@ main {
 
 .graphics-display-image-insta {
   max-height: 250px;
-  /* padding: 0.5rem; */
 }
 
 @keyframes typing {
@@ -313,6 +319,10 @@ main {
 
   .graphics-section-container {
     flex-wrap: wrap-reverse;
+  }
+
+  .graphics-logo {
+    margin-bottom: 0.7rem;
   }
 }
 
