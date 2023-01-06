@@ -32,6 +32,10 @@ function backToTop() {
   document.documentElement.scrollTop = 0;
 }
 
+
+
+// popup
+
 /* const popUp = document.getElementById('pop-up-info');
 const backPopupFilter = document.getElementById('back-popup-cover');
 

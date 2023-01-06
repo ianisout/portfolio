@@ -8,7 +8,7 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 50vh;
+  height: 40vh;
 }
 
 #btn-back-to-top {
@@ -25,6 +25,27 @@ main {
   max-height: 25px;
   max-width: 16px;
   padding-bottom: 3px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f18a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .popup-btn {
@@ -99,7 +120,7 @@ main {
   color: #adb5bd;
 }
 
-#projects, #other-sec {
+#projects, #other {
   background-color: #343a40;
 }
 
@@ -207,6 +228,39 @@ main {
   margin: auto;
 }
 
+.graphics-logo {
+  max-height: 100px;
+  max-width: 300px;
+}
+
+.graphics-section-container {
+  display: flex;
+  margin-bottom: 14px !important;
+}
+
+.image-section {
+  background-color: #212529;
+  margin-right: 40px;
+  min-width: 300px;
+  width: 60vw;
+  height: fit-content;
+}
+
+.image-section img {
+  height: 300px;
+  object-fit:contain
+}
+
+.graphics-display-image {
+  max-height: 250px;
+  padding: 0 3.5rem;
+}
+
+.graphics-display-image-insta {
+  max-height: 250px;
+  /* padding: 0.5rem; */
+}
+
 @keyframes typing {
   from {
     width: 0;
@@ -238,7 +292,7 @@ main {
   }
 
   .page-landing {
-    height: 40vh;
+    height: 50vh;
   }
 
   .organized-container {
@@ -250,6 +304,15 @@ main {
   .container-fluid {
     max-width: 90vw;
     box-sizing: border-box !important;
+  }
+
+  .image-section {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .graphics-section-container {
+    flex-wrap: wrap-reverse;
   }
 }
 
