@@ -208,10 +208,8 @@ main {
   display: flex !important;
   justify-content: center;
   flex-wrap: wrap !important;
-  border: #adb5bd67 solid 1px;
-  border-radius: 0.2rem;
-  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.019);
-  background-color: #21252973;
+  border-radius: 0.4rem;
+  background-color: #212529;
 }
 
 .container-gif-section img {
@@ -220,7 +218,7 @@ main {
 
 .gif-concept {
   width: 375px !important;
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
   width: auto\9; /* ie8 */
   overflow-x: hidden;
@@ -234,15 +232,22 @@ main {
 
 .graphics-logo {
   max-height: 120px;
-  max-width: 320px;
+  max-width: 300px;
 }
 
 .graphics-section-container {
   display: flex;
-  border: #adb5bd67 solid 1px;
-  border-radius: 0.2rem;
-  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.019);
-  background-color: #21252973;
+  border-radius: 0.4rem;
+  background-color: #212529;
+  overflow: hidden;
+}
+
+.graphics-section-container img {
+  max-width: 100%;
+}
+
+.carousel-item img {
+  max-width: 100% !important;
 }
 
 .image-section {
