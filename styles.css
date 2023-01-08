@@ -19,11 +19,12 @@ main {
   display: none;
   z-index: 100;
   background-color: rgba(43, 48, 53, 0.5);
+  height: 48px;
 }
 
 #btn-back-to-top img{
   max-height: 25px;
-  max-width: 16px;
+  max-width: 16px !important;
   padding-bottom: 3px;
 }
 
@@ -120,7 +121,7 @@ main {
   color: #adb5bd;
 }
 
-#projects, #other-stuff {
+#projects, #unity-animation, #music {
   background-color: #343a40 !important;
 }
 
@@ -209,7 +210,21 @@ main {
   justify-content: center;
   flex-wrap: wrap !important;
   border-radius: 0.4rem;
-  background-color: #212529;
+  /* background-color: #212529; */
+}
+
+.other-stuff-title {
+  background-color: #4ea3d1 !important;
+  /* margin-bottom: 0 !important; */
+}
+
+.dev-gaming {
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+}
+
+.dev-gaming .card{
+  background-color: #343a40;
 }
 
 .container-gif-section img {
@@ -222,6 +237,12 @@ main {
   height: auto;
   width: auto\9; /* ie8 */
   overflow-x: hidden;
+  transition: transform .2s;
+  margin: 0 auto;
+}
+
+.gif-concept:hover {
+  transform: scale(1.7); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .container-fluid {
@@ -238,7 +259,8 @@ main {
 .graphics-section-container {
   display: flex;
   border-radius: 0.4rem;
-  background-color: #212529;
+  background-color: #343a40; 
+  padding: 10px;
   overflow: hidden;
 }
 
@@ -270,6 +292,54 @@ main {
 
 .graphics-display-image-insta {
   max-height: 250px;
+}
+
+.direct-to-other {
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+#music {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#music iframe {
+  width: 49.5%;
+}
+
+.embeded-songs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#writing img {
+  max-width: 200px;
+}
+
+.writing-block a {
+  text-decoration: none;
+}
+
+.writ-text-section {
+  margin-left: 15px !important;
+}
+
+.other-button {
+  background-color:#343a40 !important;
+}
+
+.other-button a {
+  color: #adb5bd;
+}
+
+.other-button a:hover {
+  font-weight: 600;
+}
+
+.writ-text-section a {
+  text-decoration: none;
 }
 
 @keyframes typing {
@@ -322,12 +392,34 @@ main {
     margin: 0 auto;
   }
 
+  .gif-concept {
+    margin-left: 10px !important;
+  }
+
+  .gif-concept:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  .other-button h4{
+    font-size: 14px;
+  }
+
   .graphics-section-container {
     flex-wrap: wrap-reverse;
   }
 
   .graphics-logo {
     margin-bottom: 0.7rem;
+  }
+
+  #music iframe {
+    width: 100%;
+  }
+
+  .writ-image {
+    /* width: 100%; */
+    height: 80px;
+    width: 80px;
   }
 }
 
