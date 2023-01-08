@@ -317,6 +317,8 @@ main {
 .writ-image {
   width: 200px !important;
   height: 200px !important;
+  max-width: 200px !important;
+  max-height: 200px !important;
 }
 
 #writing img {
