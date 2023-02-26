@@ -33,149 +33,90 @@ function backToTop() {
 }
 
 
+// TEMP
 
-// popup
+const popUpDisplayData = {
 
-// const popUp = document.getElementById('pop-up-info');
-// const backPopupFilter = document.getElementById('back-popup-cover');
+  maestro: {
+    title: 'Maestro Shooter',
+    characteristics: "2D, Rhythm Action, Shooter",
+    desc: [
+      "Maestro shooter is a space shooter genre game; this was learning-driven project in which, during development, I decided to change things out to make it feel like my own. I wanted to make it as accurate as possible for music savvy folks, so, using Sibelius, a music notation software, I was able to create the notes to reflect their actual duration in relation to one another as if read in a music sheet. The notes that the maestro shoots are true to music notation in relation to themselves (as if they were in the same score).",
+      "Each note was created separately for each instrument on Sibelius, recorded through OBS, and then edited to the exact duration and best quality for the game using Adobe Premiere. This project was a great learning experience, not only to get out of my comfort zone, but to explore important concepts, such as parallax background effects, camera/movement boundaries, pathfinding (used for the instrument waves), screen shake!, Unity/C# level managing, C# singleton scorekeeper, and some animations:",
+      "Unfortunatelly, I was too much into making this one happening that I did not make commits in a timely fashion, so it's just a dump site on my GitHub, but the heart is there!"
+    ],
+    playLink: "https://i.simmer.io/@ianisout/maestro-shooter",
+    repoLink: "https://github.com/ianisout/maestro-shooter-unity",
+    img_src: [
+      "./images/game-details/maestro-shooter/maestro-instruments.png",
+      "./images/game-details/maestro-shooter/notes.png", 
+      "./images/game-details/maestro-shooter/maestro-shoot.gif",
+      "./images/game-details/maestro-shooter/maestro-reflect.gif"
+    ],
+    mainTools: "• Unity 2D<br>• Adobe Illustrator<br>• Sibelius<br>• OBS"
+  },
 
-// backPopupFilter.addEventListener('click', () => {
-//   turnOffPopUp();
-// });
+  mcfarty: {
+    title: 'Farty McFart',
+    characteristics: "3D, Arcade",
+    desc: [
+      "",
+      "",
+      ""
+    ],
+    playLink: "https://i.simmer.io/@ianisout/farty-mcfart",
+    repoLink: "https://github.com/ianisout/mc-thrust",
+    img_src: [
+      "./images/screenshots/fartymcfart.png",
+      "./images/screenshots/fartymcfart.png",
+      "./images/screenshots/fartymcfart.png",
+      "./images/screenshots/fartymcfart.png"
+    ],
+    mainTools: "• Unity 3D<br>"
+  },
 
-// const turnOffPopUp = () => {
-//   document.body.style.overflow = 'unset';
-//   popUp.style.visibility = 'hidden';
-//   backPopupFilter.style.visibility = 'hidden';
-// }
+  tilevania: {
+    title: 'TileVania',
+    characteristics: "2D, Arcade",
+    desc: [
+      "",
+      "",
+      ""
+    ],
+    playLink: "https://i.simmer.io/@ianisout/tilevania-gamedev-tv-learning-project",
+    repoLink: "https://github.com/ianisout/tilevania-gametv-project",
+    img_src: [
+      "./images/screenshots/tilevania.png",
+      "./images/screenshots/tilevania.png",
+      "./images/screenshots/tilevania.png",
+      "./images/screenshots/tilevania.png"
+    ],
+    mainTools: "• Unity 2D<br>"
+  },
 
-// document.onkeydown = function(evt) {
-//   let isEscape = false;
-
-//   if (popUp.style.visibility == 'visible') {
-//     if ("key" in evt) {
-//       isEscape = (evt.key === "Escape" || evt.key === "Esc");
-//     }
-
-//     if (isEscape) {
-//       turnOffPopUp();
-//     }
-//   }
-// };
-
-// function ShowMoreDetails(item) {
-//   popUp.style.visibility = 'visible';
-//   backPopupFilter.style.visibility = 'visible';
-//   document.body.style.overflow = 'hidden';
-
-//   popUp.innerHTML = generateHtmlForPopup(popUpDisplayData[item.id]);
-// }
-
-// function generateHtmlForPopup(game) {
-//   mybutton.style.display = "none";
-
-//   return `  
-//   <div class="pop-up-main-container">
-  
-//   <div class="pop-up-left">
-//   <h2 class="mb-4">${game.title}</h2>
-//       <p class="popup-text">${game.desc}</p>
-//       <p class="popup-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-//       <img src=${game.img_src}>
-//       <p class="popup-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-//       <img src=${game.img_src}>
-//       <p class="popup-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-//       <img src=${game.img_src}>
-//       <p class="popup-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-//       <img src=${game.img_src}>
-      
-//     </div>
-      
-//     <div class="pop-up-right flex-column">
-
-//     <div class="d-flex justify-content-between mb-4 mt-2">
-//       <span class="popup-text align-self-center exit-span">(<strong>esc</strong> to exit)</span>
-//       <h3><a class="exit-popup-btn ml-3" onclick="turnOffPopUp()"> x</a></h3>
-//     </div>
-
-//       <div class="mb-5">
-//         <h4 class="popup-text" style="color: #fafafa">Characteristics:</h4>
-//         <h5 class="popup-text">${game.characteristics}</h5>
-//       </div>
-
-//       <div  class="mb-5">
-//         <h4 class="popup-text" style="color: #fafafa">Main tools:</h4>
-//         <h5 class="popup-text">${game.mainTools}</h5>
-//       </div>
-
-//       <div class="external-links-container align-self-baseline">
-//         <div class="external-link-access">
-//           <img class="external-link-image" src="./images/play-icon.png" alt="github logo">
-//           <a href="${game.playLink}" target="_blank">PLAY</a>
-//         </div>
-//         <div class="external-link-access">
-//           <img class="external-link-image" src="./images/GitHub-Mark-Light-32px.png" alt="github logo">
-//           <a href="${game.repoLink}" target="_blank">Repo</a>
-//         </div>
-//       </div>
-//     </div>
-    
-//   </div>
-//   `
-// }
-
-// const popUpDisplayData = {
-//   maestro: {
-//     title: 'Maestro Shooter',
-//     characteristics: "2D, Rhythm Action, Shooter",
-//     desc: "",
-//     playLink: "https://i.simmer.io/@ianisout/maestro-shooter",
-//     repoLink: "https://github.com/ianisout/maestro-shooter-unity",
-//     img_src: "./images/screenshots/maestroshooter.png",
-//     mainTools: "• Unity 2D<br>• Adobe Illustrator<br>• Sibelius<br>• OBS"
-//   },
-//   mcfarty: {
-//     title: 'Farty McFart',
-//     characteristics: "3D, Arcade",
-//     desc: "",
-//     playLink: "https://i.simmer.io/@ianisout/farty-mcfart",
-//     repoLink: "https://github.com/ianisout/mc-thrust",
-//     img_src: "./images/screenshots/fartymcfart.png"
-//   },
-//   tilevania: {
-//     title: 'TileVania',
-//     characteristics: "3D, Arcade",
-//     desc: "",
-//     playLink: "https://i.simmer.io/@ianisout/farty-mcfart",
-//     repoLink: "https://github.com/ianisout/mc-thrust",
-//     img_src: "./images/screenshots/fartymcfart.png"
-//   },
-//   snowboarder: {
-//     title: 'Snow Boarder',
-//     characteristics: "3D, Arcade",
-//     desc: "",
-//     playLink: "https://i.simmer.io/@ianisout/farty-mcfart",
-//     repoLink: "https://github.com/ianisout/mc-thrust",
-//     img_src: "./images/screenshots/fartymcfart.png"
-//   },
-// };
+  snowboarder: {
+    title: 'Snow Boarder',
+    characteristics: "2D, Arcade",
+    desc: [
+      "",
+      "",
+      ""
+    ],
+    playLink: "https://sharemygame.com/@ianisout/snow-boarder",
+    repoLink: "https://github.com/ianisout/snow-boarder-gamedevtv",
+    img_src: [
+      "./images/screenshots/snow-boarder.png",
+      "./images/screenshots/snow-boarder.png",
+      "./images/screenshots/snow-boarder.png",
+      "./images/screenshots/snow-boarder.png"
+    ],
+    mainTools: "• Unity 2D<br>"
+  },
+};
 
 /* 
 
 Skills explored:
-
-
-
-
-MAESTRO SHOOTER
-camera/movement boundaries
-pathfinding
-coroutines
-screen shake
-UI
-C# level manager
-C# singleton scorekeeper
-
 
 FARTY MCFART
 vector 3 manipulation
@@ -184,9 +125,6 @@ mathf.sin() for oscillation
 UI
 background music by scene
 particle effects
-
-
-
 
 TILEVANIA
 sprite sheets
@@ -200,10 +138,7 @@ state driven cameras
 levels (unity scenes)
 score an scene persistency
 
-
-
 SNOWBOARDER
-learning:
 colliders
 cinemachine follow camera
 triggers

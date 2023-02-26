@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="styles.css" rel="stylesheet" />
-    <link rel="icon" href="./images/controller-ico.ico">
+    <link rel="icon" href="./images/icons/controller-ico.ico">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -25,19 +25,19 @@
     <main>
    
 
-      <div id="back-popup-cover" class="back-popup-cover"></div>
+      <!-- <div id="back-popup-cover" class="back-popup-cover"></div>
 
       <div
-        id="pop-up-info"
-        class="pop-up-info d-flex">
-      </div>
+        id="popup-info"
+        class="popup-info d-flex">
+      </div> -->
 
       <button
         type="button"
         class="btn btn-floating btn-lg"
         id="btn-back-to-top"
         >
-        <img src="./images/arrow-up-icon.png">
+        <img src="./images/icons/arrow-up-icon.png">
       </button>
 
       
@@ -101,7 +101,7 @@
           <h2>Playable projects (so far)</h2>
 
           <div class="mb-5 external-link-access">
-            <img class="important-icon pr-3" src="./images/important-icon.png" alt="X icon">
+            <img class="important-icon pr-3" src="./images/icons/important-icon.png" alt="X icon">
             <h5 class="not-playable-text mb-0"><strong>These games are not mobile friendly</strong></h5>
           </div>
           
@@ -120,27 +120,28 @@
               <div class="col-md-8">
                 <div class="card-body">
                   <h4 class="card-title">Maestro Shooter</h4>
-                  2d | Rhythm Action | Shooter
+                  2d | Arcade | Rhythm Action | Shooter
                   <br>
                   <br>
                   <p class="card-text">
-                    A shooter style game with music elements. I created most assets with Adobe Illustrator and sound effects with Sibelius. Note duration and instruments
-                    are true to music notation. Extra, extra fun to make, from beginning to end!
+                    A shooter style game with music elements. Extra, extra fun to make, from beginning to end!
                   </p>
 
                   <div class="external-links-container">
-                    <div class="external-link-access">
-                      <img class="external-link-image" src="./images/play-icon.png" alt="Play logo">
-                      <a class="play-btn" href="https://i.simmer.io/@ianisout/maestro-shooter" target="_blank">PLAY</a>
+                    <div class="external-link-access-play">
+                      <button class="play-btn d-flex align-items-center">
+                        <img class="external-link-image-play" src="./images/icons/play-icon.png" alt="Play logo">
+                        <a href="https://i.simmer.io/@ianisout/maestro-shooter" target="_blank">PLAY</a>
+                      </button>
                     </div>
                     <div class="external-link-access">
-                      <img class="external-link-image" src="./images/GitHub-Mark-Light-32px.png" alt="github logo">
+                      <img class="external-link-image" src="./images/icons/GitHub-Mark-Light-32px.png" alt="github logo">
                       <a href="https://github.com/ianisout/maestro-shooter-unity" target="_blank">Repo</a>
                     </div>
-                    <!-- <div class="external-link-access">
-                      <img class="external-link-image" src="./images/info-icon.png" alt="github logo">
-                      <a id="maestro" class="popup-btn" onclick="ShowMoreDetails(this)">More info</a>
-                    </div> -->
+                    <div class="external-link-access">
+                      <img class="external-link-image" src="./images/icons/info-icon.png" alt="github logo">
+                      <a id="maestro" class="popup-btn" href="./maestro-shooter-details.html">More info</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -173,18 +174,21 @@
                     <p><i><strong>NOTE:</strong> This game is running with WebGL issues on Chrome/Brave. To play it, please consider using another browser.</i></p>
                   
                   <div class="external-links-container">
-                    <div class="external-link-access">
-                      <img class="external-link-image" src="./images/play-icon.png" alt="Play logo">
-                      <a class="play-btn" href="https://i.simmer.io/@ianisout/farty-mcfart" target="_blank">PLAY</a>
+
+                    <div class="external-link-access-play">
+                      <button class="play-btn d-flex align-items-center">
+                        <img class="external-link-image-play" src="./images/icons/play-icon.png" alt="Play logo">
+                        <a href="https://i.simmer.io/@ianisout/farty-mcfart" target="_blank">PLAY</a>
+                      </button>
                     </div>
                     <div class="external-link-access">
-                      <img class="external-link-image" src="./images/GitHub-Mark-Light-32px.png" alt="github logo">
+                      <img class="external-link-image" src="./images/icons/GitHub-Mark-Light-32px.png" alt="github logo">
                       <a href="https://github.com/ianisout/mc-thrust" target="_blank">Repo</a>
                     </div>
-                    <!-- <div class="external-link-access">
-                      <img class="external-link-image" src="./images/info-icon.png" alt="github logo">
-                      <a id="mcfarty" class="popup-btn" onclick="ShowMoreDetails(this)">More info</a>
-                    </div> -->
+                    <div class="external-link-access">
+                      <img class="external-link-image" src="./images/icons/info-icon.png" alt="github logo">
+                      <a id="maestro" class="popup-btn" href="./farty-mcfart-details.html">More info</a>
+                    </div>
                     
                   </div>
 
@@ -218,18 +222,20 @@
                   </p>
 
                   <div class="external-links-container">
-                    <div class="external-link-access">
-                      <img class="external-link-image" src="./images/play-icon.png" alt="Play logo">
-                      <a class="play-btn" href="https://i.simmer.io/@ianisout/tilevania-gamedev-tv-learning-project" target="_blank">PLAY</a>
+                    <div class="external-link-access-play">
+                      <button class="play-btn d-flex align-items-center">
+                        <img class="external-link-image-play" src="./images/icons/play-icon.png" alt="Play logo">
+                        <a href="https://i.simmer.io/@ianisout/tilevania-gamedev-tv-learning-project" target="_blank">PLAY</a>
+                      </button>
                     </div>
                     <div class="external-link-access">
-                      <img class="external-link-image" src="./images/GitHub-Mark-Light-32px.png" alt="github logo">
+                      <img class="external-link-image" src="./images/icons/GitHub-Mark-Light-32px.png" alt="github logo">
                       <a href="https://github.com/ianisout/tilevania-gametv-project" target="_blank">Repo</a>
                     </div>
-                    <!-- <div class="external-link-access">
-                      <img class="external-link-image" src="./images/info-icon.png" alt="github logo">
-                      <a id="tilevania" class="popup-btn" onclick="ShowMoreDetails(this)">More info</a>
-                    </div> -->
+                    <div class="external-link-access">
+                      <img class="external-link-image" src="./images/icons/info-icon.png" alt="github logo">
+                      <a id="maestro" class="popup-btn" href="./tilevania-details.html">More info</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -261,16 +267,18 @@
                   </p>
 
                   <div class="external-links-container">
-                    <div class="external-link-access">
-                      <img class="external-link-image" src="./images/play-icon.png" alt="Play logo">
-                      <a class="play-btn" href="https://sharemygame.com/@ianisout/snow-boarder" target="_blank">PLAY</a>
+                    <div class="external-link-access-play">
+                      <button class="play-btn d-flex align-items-center">
+                        <img class="external-link-image-play" src="./images/icons/play-icon.png" alt="Play logo">
+                        <a href="https://sharemygame.com/@ianisout/snow-boarder" target="_blank">PLAY</a>
+                      </button>
                     </div>
                     <div class="external-link-access">
-                      <img class="external-link-image" src="./images/GitHub-Mark-Light-32px.png" alt="github logo">
+                      <img class="external-link-image" src="./images/icons/GitHub-Mark-Light-32px.png" alt="github logo">
                       <a href="https://github.com/ianisout/snow-boarder-gamedevtv" target="_blank">Repo</a>
                     </div>
-                    <!-- <div class="external-link-access">
-                      <img class="external-link-image" src="./images/info-icon.png" alt="github logo">
+<!--                     <div class="external-link-access">
+                      <img class="external-link-image" src="./images/icons/info-icon.png" alt="github logo">
                       <a id="snowboarder" class="popup-btn" onclick="ShowMoreDetails(this)">More info</a>
                     </div> -->
                   </div>
@@ -303,17 +311,6 @@
           <p>I have a rather holistic background relevant to game design, which raises a feeling of "jack-of-all-trades, master-of-none" at times,
             but I believe it to be one of my strengths. It arms me with a more comprehensive idea of how things work together in a game creation
             environment and how the ambiance of a gameplay can be affected as a whole.</p>
-            
-          <!-- <p>I have studied music and some music production and also worked for a while with marketing/social media, honing my skills with visual tools such as Adobe
-            Illustrator and Photoshop, as well as video recording and editing with OBS and Adobe Premiere. I also hold an A.A. in Writing
-            and Literature, as well as am pursuing a B.E. in Computer Engineering at this time. A little wild, maybe, but my heart is in the right place.</p> -->
-          
-          <!-- <p>I invite you to check out my GitHub page to check out other projects, such as
-            this freelanced <a href="https://ianisout.github.io/cjf-live/" target="_blank">music festival site</a>,
-            this little <a href="https://github-finder-react-gold.vercel.app/" target="_blank">Github Finder React app</a>,
-            and this <a href="https://character-creation-api.herokuapp.com/" target="_blank">2D character generation API</a>, which I wish I had found before, and couldn't, so I made one myself.</p>
-
-          <br> -->
           
           <p>I invite you to check out older game projects and mildly related stuff, here ↓ </p>
  
