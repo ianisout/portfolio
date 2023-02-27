@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@font-face {
+  font-family: SugarSnow;
+  src: url("./fonts/Sugar\ Snow.otf") format("opentype");
+}
 
 main {
   font-family: 'Ubuntu', sans-serif;
@@ -366,6 +370,11 @@ main {
   background-image: url('./images/game-details/maestro-shooter/maestro-background.jpg');
 }
 
+.game-detail-title-farty {
+  height: 50vh;
+  background-image: url('./images/game-details/farty/farty-background.png');
+}
+
 .game-detail-title {
   height: 50vh;
 }
@@ -383,8 +392,11 @@ main {
 }
 
 .farty-title {
+  font-family: SugarSnow;
+  color: #bda67b;
+  letter-spacing: 6px;
   font-size: 4rem;
-  text-shadow: 1px 1px 20px rgb(77, 43, 0);
+  text-shadow: 1px 1px 20px rgb(0, 0, 0);
 }
 
 .gif-game-details {

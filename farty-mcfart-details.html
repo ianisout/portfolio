@@ -34,7 +34,7 @@
 
     <h5 id="btn-back-to-main"><a href="./index.html#projects" style="text-decoration: none; color: rgb(50, 50, 50);">← Back</h5></a>
     
-    <div class="d-flex align-items-center justify-content-center game-detail-title pt-3 m-0">
+    <div class="d-flex align-items-center justify-content-center game-detail-title-farty pt-3 m-0">
       <h2 class="farty-title mb-0 text-center"><strong>Farty McFart</strong></h2>
     </div>
 
@@ -42,7 +42,7 @@
     <div class="details-top-section d-flex flex-row justify-content-between align-items-top flex-wrap py-5">
       <div class="details-top-section-left">
         <h5 class="game-details-text mt-4" style="color: #fafafa">Characteristics:</h5>
-        <p class="game-details-text">3D, Arcade, Shooter</p>
+        <p class="game-details-text">3D, Action, Platform</p>
       </div>
       
       <div>
@@ -70,85 +70,151 @@
   
     <div class="organized-container p-0 py-5 details-details">
       <h3 class="pt-3 pb-2 mt-2">Overview</h3>
-      <p class="mb-4 pt-3">Details to come.</p>
+      <p class="mb-4 pt-3">Be it in a jungle, in the office, or in space, everyone's got to make good use of a toilette seat every so often.
+        Farty McFart is a character that needs to do so, and he's in a hurry. In this game, the player needs to go from place A (launching) to place B (toilette)
+        to complete the game while avoiding environmental hazards.
+        The project started with an actual ship but wanting to add a twist to it, I decided to make it silly, so it could stand out from the rest with a
+        bit of creativity, with a lot of silliness to go along with it.</p>
 
       <h3 class="pt-3 pb-2 mt-4">Concept</h3>
-      <p>Details to come.</p>
+      <p>This is a 3D game with a 2D feel to it, where the player can only move as in a 2D environment: forward and backward - gravity will take care of the ups
+        and downs. The gameplay and learning curve are easy, the player will control the character through their keyboard's W and D keys or left and right arrows
+        and will thrust with the space bar. From an art direction point of view, the idea of the game allows for very different and unique applications,
+        seeing that some levels could have a somber atmosphere while others could be lighter and jumpier.</p>
+
+        <p>The core mechanics of the game are one, the gameplay is easy to learn, but hard to master; the idea is for the player to apply precision in their
+          controls and feel skillful while flying and avoiding obstacles. The difficulty should be increased level by level and making it harder is done during
+          level creation and development, by speeding up obstacles that can move faster and farther, while confining the space where the player can go without crashing.
+        </p>
+        <div class="img-game-details d-flex flex-wrap justify-content-around mb-4">
+          <img src="./images/game-details/farty/core-gameplay.png" style="max-width: 600px; height: fit-content;" alt="core gameplay">
+        </div>
 
       <h3 class="pt-3 pb-2 mt-4">Game Loop</h3>
-      <p>Details to come.</p>
-<!--       <ul>
+      <ul>
         <li>Main menu screen</li>
-        <li>Game scene</li>
-        <li>Game over scene, which displays the score and the option to play again or to go back to main menu</li>
-      </ul> -->
+        <li>Level 1 scene</li>
+        <li>Level 2 scene</li>
+        <li>...</li>
+        <li>Game over, the player goes back to the main menu and can start again</li>
+      </ul>
+      
+      <p>If the player crashes inside a level, they are taken back to the beginning of that level:</p>
+      <div class="img-game-details d-flex flex-wrap justify-content-around mb-4">
+        <img src="./images/game-details/farty/level-breakdown-farty.png" style="max-width: 600px; height: fit-content;" alt="level breakdown">
+      </div>
 
+      
       <h3 class="pt-3 pb-2 mt-4">Feature Analysis</h3>
-      <p>Details to come.</p>
-
-      <!-- <h5 class="pb-2">Core gameplay:</h5>
+      <p>The game consists of many levels, which can be added continuously for freshness and more challenging stages.</p>
+      
+      <h5 class="pb-2">Core gameplay:</h5>
       <ul>
         <li>Player movement</li>
-        <li>Player health</li>
-        <li>Shooting</li>
+        <li>Player collision with their environment</li>
+        <li>Obstacle movement: avoidance (considering timing, speed, and difficulty)</li>
         <li>Enemy health</li>
         <li>Enemy movement -> enemy waves, through a wave system</li>
       </ul>
-      
-      <h5 class="pb-2">Fun-to-play features:</h5>
+
+
+      <h5 class="pb-2">Secondary features:</h5>
       <ul>
-        <li>Health slider</li>
-        <li>Scoring system</li>
-        <li>Increased difficulty</li>
-        <li>Sound effects: notes, damage, and before and after sounds for each round - it is a music-themed game after all!</li>
-        <li>Special slider: Special bar that loads with time, adding a small advantage so the player can stay alive longer (hard to master)</li>
+        <li>Sound effects: being it a silly game about farts, the gameplay just doesn't feel the same without the effects of cutting one loose,
+          letting one rip, passing some gas… it's an easy thing to empathize with.</li>
+        <li>Additional levels (possibly endless)</li>
       </ul>
       
       <h5 class="pb-2">Polish:</h5>
       <ul>
         <li>Visual effects</li>
         <li>Menus/Screens</li>
-        <li>Content (additional waves, additional enemies)</li>
+        <li>Content: additional levels (possibly endless)</li>
         <li>Tuning</li>
       </ul>
- -->
+      
+      
 
       <h3 class="pt-3 pb-2 mt-4">Art Direction</h3>
-      <p>Details to come.</p>
-      <!-- <div class="img-game-details d-flex flex-wrap justify-content-around mb-4">
-        <img src="./images/game-details/maestro-shooter/maestro-instruments.png" alt="instruments screenshot">
-        <img src="./images/game-details/maestro-shooter/maestro-parallax-background.gif" alt="parallax background">
-        <img src="./images/game-details/maestro-shooter/notes.png" alt="music notation">
-      </div> -->
+       <div class="img-game-details d-flex flex-wrap justify-content-around mb-4">
+        <img src="./images/game-details/farty/farty-in-the-office.png" style="max-width: 400px; height: 250px; object-fit:cover;" alt="farty in the office">
+        <img src="./images/game-details/farty/farty-in-the-jungle.png" style="max-width: 400px; height: 250px; object-fit:cover;" alt="farty in the jungle">
+        <img src="./images/game-details/farty/farty-in-space.png" style="max-width: 400px; height: 250px; object-fit:cover;" alt="farty in space">
+      </div>
 
       <h5 class="pb-2">Environment:</h5>
 
-      <p>Details to come.</p>
+      <p>The design for the game is 3D. It is important to keep the identity of the game where the player will have a sense of depth by using 3D assets.
+        Given that each level can be its own, the environment for each level is a bit of an open-ended question. For the level designer, they can pretty
+        much be as creative as they want. Is the player in a subway station? In the doctor's office? Supermarket? Go crazy with it, as long as the visuals
+        do not clash too drastically with their previous levels.</p>
 
-      <h5 class="pb-2">Colors:</h5>
-      <p>Details to come.</p>
-      
       <h5 class="pb-2">Visuals:</h5>
-      <p>Details to come.</p>
+      <p>All visuals for Farty McFart, so far, were created using Unity Engine 3D, with a couple of free assets added from the Unity Store.
+        The main asset identity must be the same for every level, meaning using the same player character, Farty McFart, the same particle
+        effects for thrusting, and 3D backgrounds for depth. However, seeing that each level is its own, different assets were, and can be,
+        added if they are to improve on the theme, e.g.: the jungle level can have more realistic bushes/leaves, a cave level can have more complex
+        materials for stones and boulders, etc. All to be double-checked and tested before pushing a new level out. </p>
 
-      <!-- <div class="gif-game-details d-flex flex-wrap justify-content-around">
-        <img src="./images/game-details/maestro-shooter/maestro-reflect.gif" alt="maestro reflecting notes animation">
-        <img src="./images/game-details/maestro-shooter/maestro-shoot.gif" alt="maestro shooting notes animation">
-      </div> -->
-      
-      <h5 class="pb-2">Music/Sound Effects:</h5>
-      <p>Details to come.</p>
+        
+        <h5 class="pb-2">Music/Sound Effects:</h5>
+      <p>Background music: each level will have its background music that must fit its design. This adds a sense of immersion for the player while also
+        making each level, and the game itself, more dynamic.
+      </p>
+      <p>Effects: Flatulence. This feature can feel a bit crass, seeing that for most people this is a touchy (and smelly) subject, but flatulencies are funny,
+        and the main idea is for the player to hopefully have a laugh with their fun. The game is equipped with a few different sound effects for thrusting thus
+        far, but others may be added for dynamism.
+        </p>
+
+      <h3 class="pt-3 pb-2 mt-4">Feedback and valuable lessons</h3>
+      <p>After having a couple of folks test out the game, I have made some alterations as to the game's difficulty — making it easier and beginning to
+        understand how good I got at it by testing it over and over again.</p>
+
+      <p>Updates post feedback:</p>
+      <ul>
+        <li>Decreased the boosting and turning speed, making the gravity feels smaller - later reported as positive!</li>
+        <li>Make debug keys available for players (as a testing phase):</li>
+        <ul>
+          <li><strong>Tap C</strong> to enable/disable collision, with visual UI feedback, so the player can experiment the level without the fear
+            of ending it too soon</li>
+          <li><strong>Tap L</strong> to skip levels. This allows players to jump between scenes to get to know more of the game - different
+            levels and their features</li>
+        </ul>
+      </ul>
 
       <h3 class="pt-3 pb-2 mt-4">Takeaways</h3>
-      <p>Details to come.</p>
+      <p>This was my first tackle at Unity 3D, and while there were many challenges, I believe I did myself (and the player) a favor by choosing a silly theme.
+        I had plenty of giggles while creating and testing the game and have gathered mostly positive feedback from people who have played it, mostly laughs,
+      but also a bit of frustration for difficulty, which makes for a great way to spend time and keep playing the game.</p>
+
+      <p>Gathering feedback, applying it to the game, and hearing the results back was great learning and felt like an accomplishment!</p>
+
+      <p>Technically speaking, it was a great learning curve for concepts such as: Vector 3 manipulation, rotation, gravity, basic 3D modeling,
+        scene management, mathematical concepts, UI/art direction, manipulating multiple music tracks and sound effects, and tuning particle effects.
+      </p>
  
-      <span>Not a lot of details here yet, but you can have some flatulent fun in the meanwhile: </span><a href="https://i.simmer.io/@ianisout/farty-mcfart" target="_blank" style="font-weight: 600;">PLAY</a>
+      <span>Did you ever really need a escape to the bathroom and found that everything in your way was an obstacle to doing so? It's not a very pleasant feeling,
+        but helping Mr. McFart do so can at least be entertaining. Don't let him lose the battle,
+      </span><a href="https://i.simmer.io/@ianisout/farty-mcfart" target="_blank" style="font-weight: 600;">play the game now!</a>
+
+
+      <h3 class="pt-3 pb-2 mt-4">Extras!</h3>
+      <p>I'm currently working on another secondary learning project featuring Farty McFart. This is a more imersive experience where 3D movement is fully explored,
+        as well as world-building and overall Farty experience. Here's a peek:
+      </p>
+
+      <div class="gif-game-details d-flex flex-wrap justify-content-around">
+        <img src="./images/game-details/farty/farty-in-the-jungle-2.gif" alt="farty in the jungle 2">
+      </div>
+
+
+      <p>If you fancy the idea, please get in touch and let me know how you like it and what you think can be added here!</p>
 
     </div>
 
     <div style="background-color: #343a40 !important;">
       <div class="organized-container text-center py-5">
-          <h5 class="m-0"><a href="./index.html" style="text-decoration: none;">Back to Main</h5></a>
+        <h5 class="m-0"><a href="./index.html" style="text-decoration: none;">Back to Main</h5></a>
       </div>
     </div>
   </main>
