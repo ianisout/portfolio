@@ -371,12 +371,13 @@ main {
 }
 
 .game-detail-title-farty {
-  height: 50vh;
+  height: 50vh !important;
   background-image: url('./images/game-details/farty/farty-background.png');
+  overflow: hidden;
 }
 
 .game-detail-title {
-  height: 50vh;
+  height: 50vh !important;
 }
 
 .maestro-title {
@@ -565,5 +566,9 @@ main {
   .img-game-details img {
     padding-bottom: 1rem;
     object-fit: contain;
+  }
+
+  .farty-title {
+    font-size: 3rem !important;
   }
 }
